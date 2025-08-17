@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Currículum - Luciana Maffesoni</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    line-height: 1.5;
+    padding: 1rem;
+  }
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    color: #298f79;
+    margin-bottom: 0.3rem;
+  }
+  header p.subtitle {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+  }
+  header p.contact-info {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.2rem;
+  }
+  header p.contact-info a {
+    color: #298f79;
+    text-decoration: none;
+  }
+  header p.contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+  section h2 {
+    border-bottom: 2px solid #298f79;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    color: #298f79;
+    font-weight: 700;
+  }
+
+  /* Resumen profesional */
+  #summary p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  /* Proyectos y prácticas */
+  .job {
+    margin-bottom: 1.5rem;
+  }
+  .job h3 {
+    font-size: 1.3rem;
+    color: #222;
+  }
+  .job .company {
+    font-style: italic;
+    color: #555;
+  }
+  .job .dates {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+  .job ul {
+    list-style: disc inside;
+    margin-left: 1rem;
+  }
+
+  /* Proyectos destacados */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+  }
+  .project {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fafafa;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  }
+  .project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .project-info {
+    padding: 0.8rem 1rem;
+  }
+  .project-info h4 {
+    margin-bottom: 0.3rem;
+    color: #298f79;
+  }
+  .project-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: #444;
+  }
+  .project-info a {
+    font-size: 0.9rem;
+    color: #298f79;
+    text-decoration: none;
+    margin-right: 0.8rem;
+  }
+  .project-info a:hover {
+    text-decoration: underline;
+  }
+
+  /* Educación */
+  .education-item {
+    margin-bottom: 1rem;
+  }
+  .education-item h3 {
+    font-size: 1.2rem;
+    color: #222;
+  }
+  .education-item .institution {
+    font-style: italic;
+    color: #555;
+  }
+  .education-item .dates {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.3rem;
+  }
+
+  /* Habilidades */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skill {
+    background: #298f79;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  /* Contacto */
+  #contact p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  #contact a {
+    color: #298f79;
+    text-decoration: none;
+  }
+  #contact a:hover {
+    text-decoration: underline;
+  }
+
+  /* Imprimir: simplificar */
+  @media print {
+    body, main {
+      background: white;
+      box-shadow: none;
+      padding: 0;
+      margin: 0;
+    }
+    main {
+      border-radius: 0;
+      padding: 0;
+    }
+    .project img {
+      height: auto;
+    }
+    a::after {
+      content: " (" attr(href) ")";
+      font-size: 0.8em;
+      color: #000;
+    }
+  }
+</style>
+</head>
+<body>
+
+<main>
+
+<header>
+  <h1>Luciana Maffesoni</h1>
+  <p class="subtitle">Diseñadora y Desarrolladora Web</p>
+  <p class="contact-info">📧 <a href="websegura24@gmail.com">websegura24@gmail.com</a> | 📞 Teléfono: <strong>+54 9 3498 431007</strong></p>
+  <p class="contact-info">🏠 Dirección: Gobernador Crespo, Santa Fe, Argentina</p>
+ 
+</header>
+
+<section id="summary">
+  <h2>Resumen Profesional</h2>
+  <p>Técnica en informática aplicada al diseño multimedial y sitios web. Apasionada por crear experiencias digitales visualmente atractivas y funcionales. Dominio de Visual Studio, WordPress, y en constante aprendizaje de nuevas tecnologías web para seguir creciendo profesionalmente.</p>
+</section>
+
+<section id="projects-practices">
+  <h2>Proyectos y Prácticas</h2>
+
+  <div class="job">
+    <h3>Proyecto Final de la Tecnicatura: Web Segura</h3>
+    <p class="company">Proyecto Académico</p>
+    <p class="dates">2025</p>
+    <ul>
+      <li>Desarrollo de un sitio informativo sobre seguridad en aplicaciones web.</li>
+      <li>Implementación con HTML5, CSS3, Bootstrap y CSS personalizado.</li>
+      <li>Diseño responsivo y accesible para distintos dispositivos.</li>
+      <li>Optimización del código y estructura con buenas prácticas.</li>
+    </ul>
+    <p><strong>Tecnologías:</strong> HTML, CSS, Bootstrap</p>
+    <a href="https://luciana365.github.io/WebSegura24-v2/" target="_blank" rel="noopener">Ver demo</a>
+    <a href="https://github.com/luciana365/WebSegura24-v2" target="_blank" rel="noopener">Código</a>
+  </div>
+
+  <!-- Aquí podés agregar otros proyectos, prácticas o trabajos académicos -->
+
+</section>
+
+<section id="education">
+  <h2>Educación</h2>
+  <div class="education-item">
+    <h3>Técnico en Informática Aplicada al Diseño Multimedial y Sitios Web</h3>
+    <p class="institution">Facultad UNL-FICH</p>
+    <p class="dates">2022 - 2025</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Habilidades</h2>
+  <div class="skills">
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Bootstrap</div>
+    <div class="skill">WordPress</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contacto</h2>
+  <p>📧 Email: <a href="mailto:websegura24@gmail.com">websegura24@gmail.com</a></p>
+  <p>📞 Teléfono: +54 9 3498 431007</p>
+  <p>🏠 Dirección: Gobernador Crespo,Santa Fe, Argentina.</p>
+  <p>💻 GitHub: <a href="#" target="_blank" rel="noopener">github.com/luciana</a></p>
+  <p>🌐 Sitio web: <a href="https://luciana365.github.io/WebSegura24-v2/" target="_blank" rel="noopener">luciana365.github.io/WebSegura24-v2</a></p>
+</section>
+
+</main>
+
+</body>
+</html>
+
