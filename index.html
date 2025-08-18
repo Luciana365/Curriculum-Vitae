@@ -199,19 +199,53 @@
       color: #000;
     }
   }
+  /* Para poner Gmail y Teléfono en una sola fila */
+  .contact-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 0.5rem;
+  }
+  .contact-row .contact-info {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  .contact-row .contact-info a {
+    color: #298f79;
+    text-decoration: none;
+  }
+  .contact-row .contact-info a:hover {
+    text-decoration: underline;
+  }
 </style>
 </head>
 <body>
 
 <main>
 
-<header>
+<header> 
   <h1>Luciana Maffesoni</h1>
   <p class="subtitle">Diseñadora y Desarrolladora Web</p>
-  <p class="contact-info">📧 <a href="websegura24@gmail.com">websegura24@gmail.com</a> |<p><a href="https://wa.me/549349815431007?text=Hola" target="_blank" rel="noopener" aria-label="Enviar WhatsApp"> <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> +54 9 3498 431007 </a></p></p>
+
+  <div class="contact-row">
+  <p class="contact-info">
+    📧 <a href="mailto:websegura24@gmail.com">websegura24@gmail.com</a>
+  </p>
+  <p class="contact-info">
+    <a href="https://wa.me/549349815431007?text=Hola" 
+       target="_blank" 
+       rel="noopener" 
+       aria-label="Enviar WhatsApp"
+       title="Enviar mensaje por WhatsApp">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+    </a>
+  </p>
+</div>
+
   <p class="contact-info">🏠 Dirección: Gobernador Crespo, Santa Fe, Argentina</p>
- 
 </header>
+
 
 <section id="summary">
   <h2>Resumen Profesional</h2>
@@ -227,7 +261,7 @@
     <p class="dates">2025</p>
     <ul>
       <li>Desarrollo de un sitio informativo sobre seguridad en aplicaciones web.</li>
-      <li>Implementación con HTML5, CSS3, Bootstrap y CSS personalizado.</li>
+      <li>Implementación con HTML5, Bootstrap y CSS personalizado.</li>
       <li>Diseño responsivo y accesible para distintos dispositivos.</li>
       <li>Optimización del código y estructura con buenas prácticas.</li>
     </ul>
@@ -235,8 +269,6 @@
     <a href="https://luciana365.github.io/WebSegura24-v2/" target="_blank" rel="noopener">Ver demo</a>
     <a href="https://github.com/luciana365/WebSegura24-v2" target="_blank" rel="noopener">Código</a>
   </div>
-
-  <!-- Aquí podés agregar otros proyectos, prácticas o trabajos académicos -->
 
 </section>
 
@@ -263,8 +295,16 @@
 <section id="contact">
   <h2>Contacto</h2>
   <p>📧 Email: <a href="mailto:websegura24@gmail.com">websegura24@gmail.com</a></p>
-  <p>📞Teléfono:<a href="https://wa.me/549349815431007?text=Hola" target="_blank" rel="noopener" aria-label="Enviar WhatsApp"> <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> +54 9 3498 431007 </a></p>
-  <p>🏠 Dirección: Gobernador Crespo,Santa Fe, Argentina.</p>
+ <p>📞 Teléfono: 
+  <a href="https://wa.me/549349815431007?text=Hola" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Enviar WhatsApp"
+     title="Enviar mensaje por WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+  </a>
+</p>
+  <p>🏠 Dirección: Gobernador Crespo, Santa Fe, Argentina.</p>
   <p>💻 GitHub: <a href="#" target="_blank" rel="noopener">github.com/luciana</a></p>
   <p>🌐 Sitio web: <a href="https://luciana365.github.io/WebSegura24-v2/" target="_blank" rel="noopener">luciana365.github.io/WebSegura24-v2</a></p>
 </section>
@@ -273,4 +313,6 @@
 
 </body>
 </html>
+
+
 
